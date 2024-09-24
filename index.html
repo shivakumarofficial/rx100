@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Toggle Menu with Full-Width Image and Centered Content</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .full-width-image {
+      width: 100%;
+      height: 100vh; 
+      object-fit: cover; 
+      position: relative;
+    }
+
+    .centered-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; 
+      text-align: center;
+    }
+
+   
+    .centered-content h1 {
+      font-size: 4rem; 
+      color: rgb(0, 0, 0); 
+    }
+
+    
+    .centered-content p {
+      font-size: 1.5rem; 
+      color: black; 
+    }
+
+    
+    .custom-button {
+      background-color: #007bff;
+      border: none;
+      padding: 15px 30px; 
+      font-size: 1.2rem;
+      color: white;
+      border-radius: 10px; 
+    }
+
+    .custom-button:hover {
+      background-color: #0056b3;
+    }
+    .card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+   
+    @media (max-width: 575.98px) {
+      .centered-content h1 {
+        font-size: 2rem; 
+      }
+      .centered-content p {
+        font-size: 1rem; 
+      }
+      .custom-button {
+        padding: 10px 20px; 
+        font-size: 1rem;
+      }
+    }
+
+    
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .centered-content h1 {
+        font-size: 2.5rem; 
+      }
+      .centered-content p {
+        font-size: 1.2rem; 
+      }
+      .custom-button {
+        padding: 12px 25px; 
+        font-size: 1.1rem;
+      }
+    }
+
+   
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .centered-content h1 {
+        font-size: 3rem; 
+      }
+      .centered-content p {
+        font-size: 1.3rem;
+      }
+      .custom-button {
+        padding: 13px 28px; 
+        font-size: 1.15rem;
+      }
+    }
+
+    
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .centered-content h1 {
+        font-size: 3.5rem; 
+      }
+      .centered-content p {
+        font-size: 1.4rem; 
+      }
+      .custom-button {
+        padding: 14px 30px;
+        font-size: 1.2rem;
+      }
+    }
+
+    
+    @media (min-width: 1200px) {
+      .centered-content h1 {
+        font-size: 4rem; 
+      }
+      .centered-content p {
+        font-size: 1.5rem; 
+      }
+      .custom-button {
+        padding: 15px 30px; 
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" href="#">ADVENTURE BIKES</a>
+
+     
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+     
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">RX100</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RX135</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RX-Z</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container-fluid p-0 position-relative">
+    
+    <img src="C:\Users\student\Downloads\rx.jfif" alt="Caring for you" class="full-width-image">
+
+   
+    <div class="centered-content">
+      <h1>Hospital</h1>
+      <p>WE CARE You</p>
+      <a href="#" class="custom-button">Lear More</a>
+    </div>
+  </div> 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+ <section id="services" class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Our Services</h2>
+        <p class="lead">We offer a wide range of bike services to meet your needs.</p>
+      </div>
+      <div class="row mt-4">
+<div class="col-md-4">
+          <div class="card">
+            <img src="C:\Users\student\Downloads\rx1.jfif" class="card-img-top" alt="Service 1">
+            <div class="card-body">
+              <h5 class="card-title">Emergency Care</h5>
+              <p class="card-text">Quick and efficient sales services available 24/7.</p>
+            </div>
+          </div>
+        </div>
+<div class="col-md-4">
+          <div class="card">
+            <img src="C:\Users\student\Downloads\rx2.jfif" class="card-img-top" alt="Service 2">
+            <div class="card-body">
+              <h5 class="card-title">service</h5>
+              <p class="card-text"> care to keep your bike cc and mileage.</p>
+            </div>
+          </div>
+        </div>
+<div class="col-md-4">
+          <div class="card">
+            <img src="C:\Users\student\Downloads\rx3.jfif" class="card-img-top" alt="Service 3">
+            <div class="card-body">
+              <h5 class="card-title">Pediatrics</h5>
+              <p class="card-text">Comprehensive care for children from birth to adolescence.</p>
+            </div>
+        </section>
+
+            <section id="appointment" class="py-5 bg-light">
+            <div class="container">
+            <div class="row text-center">
+            <h2>Book an Appointment</h2>
+        
+            <p class="lead">Fill out the form below to schedule an appointment with our service center.</p>
+            </div>
+            <form id="appointmentForm" class="needs-validation" novalidate>
+            <div class="mb-4">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name required">
+            <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            
+            <div class="mb-4">
+            
+            <label for="email" class="form Tabel Email"></label>
+            
+            
+            <input type= "email" class="form-control" id="email" placeholder="Enter your email" required>
+        
+            <div class="invalid-feedback">Please enter valid email.</div>
+            </div>
+            <div class="mb-3">
+            <label for="date" class="form-label">Preferred Date</label> <input type="date" class="form-control" id="date" required>
+    
+            <div class="invalid-feedback">Please select a date.</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </section>
+        </form>
+
+</body>
+</html>
